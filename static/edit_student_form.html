@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Сервіс обліку студентів</title>
+    <meta name="description"
+          value="Система обліку студентів ВНЗ"/>
+
+    <!-- Include Styles -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<!--Edit student form-->
+<form class="form-horizontal" role="form">
+
+  <div class="form-group">
+    <div class="col-sm-12">
+      <h1 style="padding-left: 10px">Форма редагування студента</h1>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputSurname" class="col-sm-2 control-label">Прізвище</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="inputSurname" placeholder="Введіть прізвище">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputName" class="col-sm-2 control-label">Ім'я</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="inputName" placeholder="Введіть ім'я">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputFatName" class="col-sm-2 control-label">Побатькові</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="inputFatName" placeholder="Введіть побатькові">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputStudId" class="col-sm-2 control-label">№ Квитка</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="inputStudId" placeholder="№ Квитка">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputBday" class="col-sm-2 control-label">Дата народження</label>
+    <div class="col-sm-3">
+      <input type="date" class="form-control" id="inputBday" placeholder="Дата народження">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPhoneNumb" class="col-sm-2 control-label">Номер телефону</label>
+    <div class="col-sm-3">
+      <input type="tel" class="form-control" id="inputPhoneNumb" placeholder="+38(0__)___-__-__">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="InputProfilePhoto" class="col-sm-2 control-label">Фото</label>
+    <div class="col-sm-3">
+      <input type="file" accept="image/*" id="InputProfilePhoto">
+    </div>
+    <!--<p class="help-block">Example block-level help text here.</p>-->
+  </div>
+
+  <div class="form-group">
+    <label for="inputGroupList" class="col-sm-2 control-label">Група</label>
+    <div class="col-sm-3">
+      <input list="groupList" class="form-control" id="inputGroupList" placeholder="Введіть свою групу">
+      <datalist id="groupList">
+        <option value="МтМ-21">
+        <option value="МтМ-22">
+        <option value="МтМ-23">
+        <option value="МтМ-24">
+      </datalist>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputComment" class="col-sm-2 control-label">Додаткові відомості</label>
+    <div class="col-sm-3">
+      <textarea id="inputComment" rows="4" cols="26" maxlength="200"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-5">
+      <button type="submit" class="btn btn-primary">Зберегти</button>
+      <button type="reset" class="btn btn-danger">Скасувати</button>
+    </div>
+  </div>
+
+</form>
+<!--End of Edit Student Form-->
+
+<!-- Javascripts Section -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

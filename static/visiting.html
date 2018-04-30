@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Сервіс обліку студентів</title>
+    <meta name="description"
+          value="Система обліку студентів ВНЗ"/>
+
+    <!-- Include Styles -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+<!--
+    <style type="text/css">.col-xs-12, .col-xs-4, .col-xs-8 {
+        border : 1px solid red;
+        }</style>
+-->
+
+</head>
+
+<body>
+
+<!-- Start Container -->
+<div class="container">
+
+    <!-- Start Headder -->
+    <div class="row" id="header">
+
+        <!-- Logo -->
+        <div class="col-xs-8">
+            <h1>Сервіс обліку студентів</h1>
+        </div>
+
+        <!-- Group Selector -->
+        <div class="col-xs-4" id="group-selector">
+            <strong>Група:</strong>
+            <label>
+                <select>
+                    <option value="">Усі студенти</option>
+                    <option value="">МтМ - 21, Подоба Віталій (№ 254)</option>
+                    <option value="">МтМ - 22, Захаров Олександр (№ 2123)</option>
+                </select>
+            </label>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start SubHeader -->
+    <div class="row" id="sub-header">
+        <div class="col-xs-12">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation"><a href="index.html">Студенти</a></li>
+                <li role="presentation" class="active"><a href="visiting.html">Відвідування</a></li>
+                <li role="presentation"><a href="group_list.html">Групи</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- End SubHeader -->
+
+    <!-- Start Main Page Content -->
+    <div class="row" id="content-columns">
+
+        <div class="col-xs-12" id="content-column">
+
+            <h2>Облік відвідування</h2>
+
+            <div class="month-pagination">
+                <nav aria-label="Month navigation">
+                    <a href="#">&larr;</a>
+                    <label>Жовтень 2014</label>
+                    <a href="#">&rarr;</a>
+                </nav>
+            </div>
+
+
+            <table class="table table-hover table-striped table-condensed table-bordered">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Студент</th>
+                    <th>Ср 1</th>
+                    <th>Чт 2</th>
+                    <th>Пт 3</th>
+                    <th>Сб 4</th>
+                    <th>Нд 5</th>
+                    <th>Пн 6</th>
+                    <th>Вт 7</th>
+                    <th>Ср 8</th>
+                    <th>Чт 9</th>
+                    <th>Пт 10</th>
+                    <th>Сб 11</th>
+                    <th>Нд 12</th>
+                    <th>Пн 13</th>
+                    <th>Вт 14</th>
+                    <th>Ср 15</th>
+                    <th>Чт 16</th>
+                    <th>Пт 17</th>
+                    <th>Сб 18</th>
+                    <th>Нд 19</th>
+                    <th>Пн 20</th>
+                    <th>Вт 21</th>
+                    <th>Ср 22</th>
+                    <th>Чт 23</th>
+                    <th>Пт 24</th>
+                    <th>Сб 25</th>
+                    <th>Нд 26</th>
+                    <th>Пн 27</th>
+                    <th>Вт 28</th>
+                    <th>Ср 29</th>
+                    <th>Чт 30</th>
+                    <th>Пт 31</th>
+                </tr>
+                <!--
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Студент</th>
+                                        <th>1</th>
+                                        <th>2</th>
+                                        <th>3</th>
+                                        <th>4</th>
+                                        <th>5</th>
+                                        <th>6</th>
+                                        <th>7</th>
+                                        <th>8</th>
+                                        <th>9</th>
+                                        <th>10</th>
+                                        <th>11</th>
+                                        <th>12</th>
+                                        <th>13</th>
+                                        <th>14</th>
+                                        <th>15</th>
+                                        <th>16</th>
+                                        <th>17</th>
+                                        <th>18</th>
+                                        <th>19</th>
+                                        <th>20</th>
+                                        <th>21</th>
+                                        <th>22</th>
+                                        <th>23</th>
+                                        <th>24</th>
+                                        <th>25</th>
+                                        <th>26</th>
+                                        <th>27</th>
+                                        <th>28</th>
+                                        <th>29</th>
+                                        <th>30</th>
+                                        <th>31</th>
+                                    </tr>
+                -->
+
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><a title="Редагувати" href="#">Подоба Віталій</a></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a title="Редагувати" href="#">Захаров Олександр</a></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a title="Редагувати" href="#">Корост Андрій</a></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a title="Редагувати" href="#">Притула Тарас</a></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a title="Редагувати" href="#">Іванов Сергій</a></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><a title="Редагувати" href="#">Пупкін Вася</a></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><a title="Редагувати" href="#">Погорілий Діма</a></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><a title="Редагувати" href="#">Франко Микола</a></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                    <td><label>
+                        <input type="checkbox">
+                    </label></td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <!-- End Main Page Content -->
+
+    <!-- Start Footer -->
+    <div class="row" id="footer">
+        <div class="col-xs-12">
+            &copy; 2018 Сервіс обліку студентів
+        </div>
+    </div>
+    <!-- End Footer -->
+
+</div>
+<!-- End Container -->
+
+
+<!-- Javascripts Section -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
