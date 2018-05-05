@@ -10,7 +10,7 @@
     <!-- Include Styles -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{{ PORTAL_URL }}{% static 'css/main.css' %}">
     {% block extra_css %}{% endblock extra_css %}
 
 </head>
@@ -44,9 +44,14 @@
     <div class="row" id="sub-header">
         <div class="col-xs-12">
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="{% url 'home' %}">Студенти</a></li>
-                <li role="presentation"><a href="/journal">Відвідування</a></li>
-                <li role="presentation"><a href="{% url 'groups' %}">Групи</a></li>
+                {% url 'home' as url_home_page %}
+                <li role="presentation" {% if request.path == url_home_page %} class="active"{% endif %}><a
+                        href="{% url 'home' %}">Студенти</a></li>
+                <li role="presentation" {% if '/journal' in request.path %} class="active" {% endif %}><a
+                        href="/journal">Відвідування</a></li>
+                {% url 'groups' as url_groups_page %}
+                <li role="presentation" {% if request.path == url_groups_page %} class="active" {% endif %}><a
+                        href="{% url 'groups' %}">Групи</a></li>
             </ul>
         </div>
     </div>
@@ -60,8 +65,8 @@
             <div class="alert alert-warning" role="alert">Status Update!</div>
             {% endcomment %}
 
-            <h2>{% block title %}{% endblock title%}</h2>
-            {% block contetnt %}{% endblock contetnt%}
+            <h2>{% block title %}{% endblock title %}</h2>
+            {% block contetnt %}{% endblock contetnt %}
 
         </div>
     </div>
