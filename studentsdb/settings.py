@@ -22,7 +22,8 @@ TEMPLATE_CONTEXT_PROCESSORS = \
         "studentsdb.context_processors.students_proc"
     )
 
-PORTAL_URL = "http://127.0.0.1:8000"
+# PORTAL_URL = "http://127.0.0.1:8000"
+# PORTAL_URL = "http://localhost:8000"
 
 
 # Quick-start development settings - unsuitable for production
