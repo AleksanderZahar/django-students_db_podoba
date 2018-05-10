@@ -47,8 +47,9 @@
                 {% url 'home' as url_home_page %}
                 <li role="presentation" {% if request.path == url_home_page %} class="active"{% endif %}><a
                         href="{% url 'home' %}">Студенти</a></li>
-                <li role="presentation" {% if '/journal' in request.path %} class="active" {% endif %}><a
-                        href="/journal">Відвідування</a></li>
+                {% url 'journal' as url_journal_page %}
+                <li role="presentation" {% if url_journal_page in request.path %} class="active" {% endif %}><a
+                        href="{% url 'journal' %}">Відвідування</a></li>
                 {% url 'groups' as url_groups_page %}
                 <li role="presentation" {% if request.path == url_groups_page %} class="active" {% endif %}><a
                         href="{% url 'groups' %}">Групи</a></li>
