@@ -13,6 +13,9 @@ urlpatterns = patterns('',
                        url(r'^students/(?P<sid>\d+)/delete/$', 'students.views.views_students.students_delete',
                            name='students_delete'),
 
+                       # Student visiting urls
+                       url(r'^journal/$', 'students.views.views_journal.journal_list', name='journal'),
+
                        # Groups List
                        url(r'^groups/$', 'students.views.views_groups.groups_list', name='groups'),
                        url(r'^groups/add/$', 'students.views.views_groups.groups_add', name='groups_add'),
