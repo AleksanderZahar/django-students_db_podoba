@@ -15,16 +15,11 @@ from django.conf import global_settings
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-
 TEMPLATE_CONTEXT_PROCESSORS = \
     global_settings.TEMPLATE_CONTEXT_PROCESSORS + (
         "django.core.context_processors.request",
         "studentsdb.context_processors.students_proc"
     )
-
-# PORTAL_URL = "http://127.0.0.1:8000"
-# PORTAL_URL = "http://localhost:8000"
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -38,7 +33,6 @@ DEBUG = True
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -93,6 +87,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
+
+PORTAL_URL = "http://127.0.0.1:8000"
+# PORTAL_URL = "http://localhost:8000"
 
 STATIC_URL = '/static/'
 
