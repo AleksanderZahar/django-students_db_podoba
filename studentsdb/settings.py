@@ -18,7 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 TEMPLATE_CONTEXT_PROCESSORS = \
     global_settings.TEMPLATE_CONTEXT_PROCESSORS + (
         "django.core.context_processors.request",
-        "studentsdb.context_processors.students_proc"
+        "studentsdb.context_processors.students_proc",
     )
 
 # Quick-start development settings - unsuitable for production
@@ -64,12 +64,8 @@ WSGI_APPLICATION = 'studentsdb.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, '..', 'db.sqlite3'),
-    }
-}
+from .db import DATABASES
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
