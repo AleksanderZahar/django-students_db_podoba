@@ -84,8 +84,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-PORTAL_URL = "http://127.0.0.1:8000"
-# PORTAL_URL = "http://localhost:8000"
+# PORTAL_URL = "http://127.0.0.1:8000/"
+PORTAL_URL = "http://localhost:8000"
 
 STATIC_URL = '/static/'
 
