@@ -18,7 +18,8 @@ def students_list(request):
             students = students.reverse()
 
     # paginate students
-    paginator = Paginator(students, 10)
+    stud_per_page=10
+    paginator = Paginator(students, stud_per_page)
     page = request.GET.get('page')
     try:
         students = paginator.page(page)
@@ -28,8 +29,8 @@ def students_list(request):
     except EmptyPage:
         # If page is out of range (>9999), deliver last page of results
         students = paginator.page(paginator.num_pages)
-
-    return render(request, 'students/students_list.html', {'students': students})
+    page_coef = (int(page)-1)*stud_per_page
+    return render(request, 'students/students_list.html', {'students': students, 'page_multiplicator': page_coef})
 
 
 def students_add(request):
